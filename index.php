@@ -14,8 +14,6 @@
     <nav style="background-color: aquamarine;">
         <h2 style="text-align: center;">Hisp Quiz</h2>
     </nav>
-
-
     <div>
         <table style="width:100%" class="table">
             <tr>
@@ -24,16 +22,14 @@
                 <th>Value</th>
             </tr>
             <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
+                <td id="demo"></td>
+                <td></td>
+                <td></td>
             </tr>
+            <tr></tr>
 
         </table>
     </div>
-
-    <p id="demo"></p>
-
     <!-- jsonData -->
     <script>
     var jsonData = ` {
@@ -105,10 +101,6 @@
                 ]
             ]
         }`;
-
-
-
-
     //Converting JSON Object to JS Object
     var obj = JSON.parse(jsonData);
 
@@ -121,45 +113,7 @@
     }
 
     document.getElementById("demo").innerHTML = text;
-
-
-
-
-
-
-
-
-
-
-    //functions
-
-    // function printValues(obj) {
-    //     for (var k in obj) {
-    //         if (obj[k] instanceof Object) {
-    //             printValues(obj[k]);
-    //         } else {
-    //             document.write(obj[k] + "<br>");
-    //         };
-    //     }
-
-    // };
-
-    // // printValues(obj);
-    // document.write("<hr>");
-
-    // var dump = document.write(obj["rows"] + "<br>");
-
-    // let text = "";
-    // for (let i = 0; i < dump.length; i++) {
-    //     text += dump[i] + "<br>";
-    // }
     </script>
-
-
-
-
-
-
     <!--Bootsrap4script-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
